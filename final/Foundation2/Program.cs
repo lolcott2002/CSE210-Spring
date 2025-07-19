@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+
 public class Program
 {
     public static void Main(string[] args)
@@ -45,7 +46,7 @@ public class Program
         Console.WriteLine("\n" + order3.NewPackingLabel());
         Console.WriteLine("\n" + order3.NewShippingLabel());
         Console.WriteLine($"Total Order Cost: ${order3.CalculateTotalCost():F2}\n");
-//exit the program
+        //exit the program
         Console.WriteLine("Press any key to exit.");
         Console.ReadKey();
     }
