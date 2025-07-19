@@ -1,10 +1,9 @@
-// Represents a physical address.
 using System.Text;
 public class Address
 {
     private string _customerAddress;
     private string _city;
-    private string _state; 
+    private string _state;
     private string _country;
 
     //makes a new address
@@ -17,9 +16,9 @@ public class Address
     }
 
     //sets the country
-    public string Country
+    public string GetCountry()
     {
-        get { return _country; }
+        return _country;
     }
 
     //makes sure the address is in the US of A
@@ -28,7 +27,7 @@ public class Address
         return _country.Equals("USA", StringComparison.OrdinalIgnoreCase);
     }
 
-    //returns the address
+     //returns the address
     public string GetAddressString()
     {
         StringBuilder sb = new StringBuilder();
@@ -38,4 +37,3 @@ public class Address
         return sb.ToString();
     }
 }
-

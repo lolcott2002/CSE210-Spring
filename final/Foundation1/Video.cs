@@ -2,10 +2,10 @@ public class Video
 {
     private string _title;
     private string _creator;
-    private int _length; 
-    private List<Comment> _comments; 
+    private int _length;
+    private List<Comment> _comments;
 
-    //creates a video and gets the author, length, and name of the video. it also starts a list of comments.
+    //creates a video and gets the author, length, and name of the video. It also starts a list of comments.
     public Video(string title, string creator, int length)
     {
         _title = title;
@@ -14,37 +14,37 @@ public class Video
         _comments = new List<Comment>();
     }
 
-//videos title
-    public string Title
+    //videos title
+    public string GetTitle()
     {
-        get { return _title; }
+        return _title;
     }
 
-//video creator
-    public string Creator
+    //videos creator
+    public string GetCreator()
     {
-        get { return _creator; }
+        return _creator;
     }
 
-//videos length
-    public int Length
+    //videos length
+    public int GetLength()
     {
-        get { return _length; }
+        return _length;
     }
 
-//retrieves the list of comments
-    public List<Comment> Comments
+    //retrieves the list of comments
+    public List<Comment> GetComments()
     {
-        get { return _comments; }
+        return _comments;
     }
 
-//adds a comment to the list
+    //adds a comment to the list
     public void AddComment(Comment comment)
     {
         _comments.Add(comment);
     }
 
-//gives the total number of comments
+    //gives the total number of comments
     public int NumberOfComments()
     {
         return _comments.Count;

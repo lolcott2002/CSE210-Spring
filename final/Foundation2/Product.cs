@@ -5,7 +5,7 @@ public class Product
     private decimal _pricePerUnit;
     private int _quantity;
 
-    // makes a new product
+    //makes a new product
     public Product(string name, string productId, decimal pricePerUnit, int quantity)
     {
         _name = name;
@@ -13,20 +13,21 @@ public class Product
         _pricePerUnit = pricePerUnit;
         _quantity = quantity;
     }
-    public string Name
+
+
+    public string GetName()
     {
-        get { return _name; }
+        return _name;
     }
 
-    public string ProductId
+    public string GetProductId()
     {
-        get { return _productId; }
+        return _productId;
     }
 
-    // total cost of the product
+    //total cost of the product
     public decimal GetTotalCost()
     {
         return _pricePerUnit * _quantity;
     }
 }
-

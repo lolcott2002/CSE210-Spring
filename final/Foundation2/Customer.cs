@@ -12,15 +12,15 @@ public class Customer
     }
 
     //customers name
-    public string Name
+    public string GetName()
     {
-        get { return _name; }
+        return _name;
     }
 
     //customers address
-    public Address Address
+    public Address GetAddress()
     {
-        get { return _address; }
+        return _address;
     }
 
     //makes sure they live in the US of A

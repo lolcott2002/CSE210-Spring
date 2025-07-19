@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+
 public class Comment
 {
     private string _commenter;
@@ -12,15 +13,15 @@ public class Comment
         _commentWords = comment;
     }
 
- //this will get the commenter's name
-    public string Commenter
+    //this will get the commenter's name
+    public string GetCommenter()
     {
-        get { return _commenter; }
+        return _commenter;
     }
-//this will get what the comment says
-    public string CommentWords
+
+    //this will get what the comment says
+    public string GetCommentWords()
     {
-        get { return _commentWords; }
+        return _commentWords;
     }
 }
-
